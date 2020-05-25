@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Aplicacion_de_administracion.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AlturaResolucion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">720</Value>
+    </Setting>
+    <Setting Name="AnchuraResolucion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1280</Value>
+    </Setting>
+    <Setting Name="ModoOscuro" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StorageKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iKB1qJ5631bkTFh6FjKERMbf+4MRY0YaEDUMJ1AYKPBjLEzhofD0m9aGC2xCgtIcDODRZGJf92nQGaCQmfrPuw==</Value>
+    </Setting>
+    <Setting Name="WindowState" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="WindowStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SingleBorderWindow</Value>
+    </Setting>
+    <Setting Name="PantallaCompleta" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

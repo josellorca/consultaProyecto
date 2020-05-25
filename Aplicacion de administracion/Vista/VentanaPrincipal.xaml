@@ -1,0 +1,44 @@
+﻿<Window x:Class="Aplicacion_de_administracion.Vista.VentanaPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplicacion_de_administracion.Vista"
+        xmlns:properties="clr-namespace:Aplicacion_de_administracion.Properties"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="VentanaPrincipal" Height="{Binding Source={x:Static properties:Settings.Default}, Path=AlturaResolucion, Mode=OneWay}" Width="{Binding Source={x:Static properties:Settings.Default}, Path=AnchuraResolucion, Mode=OneWay}"
+        MinWidth="970px"
+        MinHeight="670px"
+         WindowStartupLocation="CenterScreen"
+        WindowState="{Binding Source={x:Static properties:Settings.Default},Path=WindowState, Mode=OneWay}"
+                WindowStyle="{Binding Source={x:Static properties:Settings.Default},Path=WindowStyle, Mode=OneWay}">
+    <DockPanel LastChildFill="True">
+        <ScrollViewer DockPanel.Dock="Left">
+            <DockPanel>
+                <Grid DockPanel.Dock="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="ConfiguracionButton"  Background="Orange" Width="Auto" Click="ConfiguracionButton_Click">
+                        <Image Source="../Recursos/engranaje.png"/>
+                    </Button>
+                    <Button Grid.Column="1" x:Name="SalirButton" Content="Salir" Width="Auto" Background="Orange" Click="SalirButton_Click"></Button>
+                </Grid>
+                <StackPanel x:Name="MenuStackPanel" Background="Orange">
+                </StackPanel>
+            </DockPanel>
+        </ScrollViewer>
+        <Grid x:Name="UserControlsGrid">
+            
+        </Grid>
+    </DockPanel>
+</Window>
